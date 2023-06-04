@@ -1,0 +1,205 @@
+
+/* Estilos para telas com largura menor ou igual a 600 pixels */
+@media screen and (max-width: 600px) {
+    /* Estilos específicos para telas pequenas */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: linear-gradient(to bottom right, red, yellow);
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+    }
+    .valores {
+        border: 1px solid white;
+        width: 100px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        left: 50vw;
+        color: white;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .valores:hover, #botDecomposicao:hover {
+        color: yellow;
+        border: 1px solid yellow;
+        cursor: pointer;
+    }
+    #resultado {
+        background-color: white;
+        position: absolute;
+        left: 46vw;
+        top: 32vh;
+        border: 1px solid white;
+        width: auto;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: black;
+        /*animation: abaixaResultado 2s;*/
+    
+    }
+    #botDecomposicao {
+        position: absolute;
+        display: inline-block;
+        border: 1px solid white;
+        width: 200px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        left: 35vw;
+        top: 50vh;
+        color: white;
+    }
+    #resultadoDecomposicao {
+        background-color:white; 
+        position: absolute;
+        display: inline-block;
+        border: 1px solid white;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+        font-size: 30px;
+        border-radius: 20px;
+        left: 25vw;
+        top: 65vh;
+        color: black;
+    }
+  }
+/* Estilos para telas com largura maior que 900 pixels */
+@media screen and (min-width: 901px) {
+    /* Estilos específicos para telas grandes */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: linear-gradient(to bottom right, red, yellow);
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+    }
+    
+    .valores {
+        margin: 50px;
+        display: inline-block;
+        border: 1px solid white;
+        width: 100px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        left: 50vw;
+        color: white;
+    }
+    .valores:hover, #botDecomposicao:hover {
+        color: yellow;
+        border: 1px solid yellow;
+        cursor: pointer;
+    }
+    @keyframes abaixaResultado {
+        0% {
+            position: absolute;
+            left: 46vw;
+            top: -50vh;
+        }
+        100% {
+            position: absolute;
+            left: 46vw;
+            top: 30vh; 
+        }
+    }
+    #resultado {
+        background-color: white;
+        position: absolute;
+        left: 46vw;
+        top: 32vh;
+        border: 1px solid white;
+        width: auto;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: black;
+        animation: abaixaResultado 2s;
+    
+    }
+    @keyframes moveCaixa {
+        0% {
+            position: absolute;
+            top: 10vh;
+            left: -50vw;
+        }
+        100% {
+            position: absolute;
+            top: 10vh;
+            left: 10vw;
+        }
+    }
+    #caixa {
+        text-align: center;
+        position: absolute;
+        top: 10vh;
+        width: 80%;
+        left: 10vw;
+        animation: moveCaixa 2s;
+    }
+    @keyframes moveCaixaMenos {
+        0% {
+            position: absolute;
+            top: 40vh;
+            left: 50vw
+        }
+        100% {
+            position: absolute;
+            top: 40vh;
+            left: 10vw; 
+        }
+    }
+    #caixaMenos {
+        text-align: center;
+        position: absolute;
+        top: 40vh;
+        width: 80%;
+        left: 10vw;
+        animation: moveCaixaMenos 2s;
+    }
+    #botDecomposicao {
+        position: absolute;
+        display: inline-block;
+        border: 1px solid white;
+        width: 200px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        left: 25vw;
+        top: 65vh;
+        color: white;
+    }
+    #resultadoDecomposicao {
+        background-color:white; 
+        position: absolute;
+        display: inline-block;
+        border: 1px solid white;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        left: 40vw;
+        top: 65vh;
+        color: black;
+    }
+    
+  }
